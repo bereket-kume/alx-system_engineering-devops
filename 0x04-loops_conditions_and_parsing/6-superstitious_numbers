@@ -6,11 +6,11 @@ do
 	case $counter in
 	    4)
 		echo "4"
-		echo "bad luck from china"
+		echo "bad luck from China"
 		;;
 	    9)
 		echo "9"
-		echo "bad luck form japan"
+		echo "bad luck form Japan"
 		;;
 	    17)
 		echo "17"

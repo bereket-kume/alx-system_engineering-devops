@@ -10,11 +10,11 @@ do
 		;;
 	    9)
 		echo "9"
-		echo "bad luck form Japan"
+		echo "bad luck from Japan"
 		;;
 	    17)
 		echo "17"
-		echo "bad luck form Italy"
+		echo "bad luck from Italy"
 		;;
 	    *)
 		    echo "$counter"

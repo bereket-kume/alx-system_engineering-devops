@@ -8,5 +8,4 @@ if [ -z "$pid" ]; then
 else
     # Send the TERM signal to the process
     pkill -TERM -P "$pid"
-    echo "Terminated"
 fi

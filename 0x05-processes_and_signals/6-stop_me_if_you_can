@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# stop without using kill
+
+pid=$(pgrep -f "4-to_infinity_and_beyond")
+
+if [ -z "$pid" ]; then
+    echo "Process not found"
+else
+    # Send the TERM signal to the process
+    pkill -TERM -P "$pid"
+    echo "Terminated"
+fi

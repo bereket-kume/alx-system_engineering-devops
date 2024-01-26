@@ -2,7 +2,7 @@
 # displays PID with process name
 
 script_pid=$$
-pids=$(ps -ef | grep bash | grep -v grep | awk '{print $2}')
+pids=$(pgrep -f bash)
 for pid in $pids; do
 	 if [ "$pid" != "$script_pid" ]; then
 		echo "$pid bash"

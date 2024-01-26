@@ -9,4 +9,4 @@ else
     # Terminate the process
     kill "$pid"
     echo "Terminated"
-fio
+fi

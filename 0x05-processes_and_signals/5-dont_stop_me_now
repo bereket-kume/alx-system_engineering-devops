@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# displays Don't stop me now!
+
+pid=$(pgrep -f "4-to_infinity_and_beyond")
+
+if [ -z "$pid" ]; then
+    echo "Process not found"
+else
+    # Terminate the process
+    kill "$pid"
+    echo "Terminated"
+fio

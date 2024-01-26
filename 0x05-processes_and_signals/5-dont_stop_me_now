@@ -8,5 +8,4 @@ if [ -z "$pid" ]; then
 else
     # Terminate the process
     kill "$pid"
-    echo "Terminated"
 fi

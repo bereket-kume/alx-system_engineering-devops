@@ -6,4 +6,4 @@ input = ARGV[0]
 
 matches = input.scan(pattern)
 
-puts matches.join.(',')
+puts matches.join(',')

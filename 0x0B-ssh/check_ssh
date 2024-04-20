@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# Define the path to the private key file
+private_key="$HOME/.ssh/school"
+
+# Check if the private key file exists
+if [ -f "$private_key" ]; then
+	    echo "Private key file 'school' exists."
+    else
+	        echo "Private key file 'school' does not exist."
+fi
+
+

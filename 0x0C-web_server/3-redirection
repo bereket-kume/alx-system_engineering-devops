@@ -1,4 +1,3 @@
-
 #!/usr/bin/env bash
 # Configures a new ubuntu machine by installing
 # Nginx where it should be listening on port 80
@@ -35,4 +34,3 @@ sudo sed -i '24i\       rewrite ^/redirect_me https://www.youtube.com/watch?v=QH
 sudo service nginx restart
 
 echo -e "\nCompleted.\n"
-

@@ -1,0 +1,3 @@
+sed: couldn't open temporary file /etc/nginx/sites-available/sed9yG1wF: Permission denied
+ * Restarting nginx nginx
+   ...fail!

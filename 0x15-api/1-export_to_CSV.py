@@ -16,5 +16,6 @@ if __name__ == '__main__':
     with open(filename, mode='w', newline='') as file:
         writer = csv.writer(file, quoting=csv.QUOTE_ALL)
         for to in todo.json():
-            writer.writerow(
-                [user_id, user_name, to.get('completed'), to.get('title')])
+            if to.get('userId') == int(user_id):
+                writer.writerow(
+                    [user_id, user_name, to.get('completed'), to.get('title')])

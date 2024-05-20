@@ -7,17 +7,14 @@ import sys
 
 if __name__ == '__main__':
 
-    user_id = sys.argv[1]
-    user_data = requests.get("https://jsonplaceholder.typicode.com/users/{}"
-                             .format(user_id))
-    user_name = user_data.json().get('name')
+    user_data = requests.get("https://jsonplaceholder.typicode.com/users")
     todo = requests.get("https://jsonplaceholder.typicode.com/todos")
 
     todoall = {}
-    for user in user_data:
+    for user in user_data.json():
         taskList = []
         for task in todo.json():
-            if task.get('userId') == int(user_id):
+            if task.get('userId') == user.get('id'):
                 taskDict = {"username": user.get('username'),
                             "task": task.get('title'),
                             "completed": task.get('completed')}
@@ -26,4 +23,4 @@ if __name__ == '__main__':
         todoall[user.get('id')] = taskList
 
         with open("todo_all_employees.json", mode='w') as file:
-            json.dumps(todoall, file)
+            json.dump(todoall, file)

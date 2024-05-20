@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """ api to fetch user data """
 
+import json
 import requests
 import sys
-import json
 
 if __name__ == '__main__':
 
